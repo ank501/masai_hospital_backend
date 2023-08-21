@@ -12,7 +12,7 @@ const app = express();
 app.use(express.json());
 
 app.use("/user",userRouter);
-app.use("/appointment",appointmentRouter)
+app.use("/appointment",appointmentRouter);
 
 app.get("/",(req,res)=>{
     res.send("welcome to home page")
